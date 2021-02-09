@@ -21,7 +21,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Computing student at Imperial College London.
 twitter_username: 
 github_username: roccojiang
-minimal_mistakes_skin: default
+minimal_mistakes_skin: dark
 search: false
 
 # Build settings
