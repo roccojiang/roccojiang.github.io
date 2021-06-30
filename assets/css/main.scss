@@ -4,5 +4,26 @@
 
 @charset "utf-8";
 
+/* Headline scale */
+$h-size-1: 1.25em; // ~20px
+$h-size-2: 1em; // ~16px
+$h-size-3: 1em; // ~16px
+$h-size-4: 1em; // ~16px
+$h-size-5: 1em; // ~16px
+$h-size-6: 1em; // ~16px
+
+/* Typefaces */
+$sans-serif: "Lato", -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI",
+  "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+$sans-serif-narrow: "Raleway", $sans-serif;
+
+$global-font-family: $sans-serif;
+$header-font-family: $sans-serif-narrow;
+
+/* No underline in post title links */
+.archive__item-title a {
+    text-decoration: none;
+}
+
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials

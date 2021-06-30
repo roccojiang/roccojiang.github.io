@@ -14,12 +14,12 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Rocco Jiang
-subtitle: First-Year Computing student
+subtitle:
 locale: en-GB
 email: roccohjiang@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Computing student at Imperial College London.
-twitter_username: 
+twitter_username:
 github_username: roccojiang
 minimal_mistakes_skin: dark
 search: false
@@ -58,10 +58,10 @@ plugins:
   - jekyll-include-cache
 
 author:
-  name     : "Rocco Jiang"
-  avatar   : "/assets/images/bio-photo.jpg"
-  bio      : "Wearing penguin hats since I was 12."
-  location : "London, United Kingdom"
+  name: "Rocco Jiang"
+  avatar: "/assets/images/bio-photo.jpg"
+  bio: "First-year Computing student @ Imperial College London"
+  location: "London, United Kingdom"
   links:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
