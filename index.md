@@ -4,6 +4,20 @@ layout: single
 author_profile: true
 ---
 
-Tempor velit sint sunt ipsum tempor enim ad qui ullamco. Est dolore anim ad velit duis dolore minim sunt aliquip amet commodo labore. Ut eu pariatur aute ea aute excepteur laborum. Esse ea esse excepteur minim mollit qui cillum excepteur ex dolore magna. Labore deserunt fugiat incididunt incididunt sint ea. Consequat dolore aute laboris quis proident quis non et est consectetur ex eiusmod sit culpa.
+I'm currently a student at [Imperial College London](https://www.imperial.ac.uk/) studying [Computing](https://www.imperial.ac.uk/computing/), having just finished my first year of studies.
 
-Cupidatat ea do et in excepteur in. Ad nostrud ut est esse eu duis ea sunt eiusmod. Aliquip tempor veniam sint elit fugiat. Velit incididunt laboris amet incididunt labore dolore irure velit excepteur commodo deserunt laborum. Consectetur eu fugiat veniam veniam Lorem labore magna eiusmod. Ea occaecat reprehenderit pariatur consectetur minim labore ut aliquip.
+You can find my blog posts on computing-related topics here, as well as other miscellaneous rambles and thoughts.
+
+## Projects
+### Maze generation visualisation
+<sup>([GitHub](https://github.com/ethanrange/c-maze-generation))</sup>
+
+Implementations of common maze generation and pathfinding algorithms, visualised with the Raylib game engine in C. Written in a group of 4, as part of the extension for Imperial's first-year C project.
+
+### ARM emulator and assembler
+Emulator and assembler programs for a subset of the ARM11 instruction set. Written in a group of 4, for Imperial's first-year C project.
+
+### Simple programming language interpreter
+<sup>([GitHub](https://github.com/roccojiang/traversal-lang))</sup>
+
+An interpreter written in Python for a simple educational programming language called Traversal. Completed for my [Extended Project Qualification](https://www.aqa.org.uk/subjects/projects/project-qualifications/EPQ-7993).
