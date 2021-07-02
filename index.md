@@ -2,6 +2,10 @@
 title: "About me"
 layout: single
 author_profile: true
+toc: true
+toc_label: "Overview"
+toc_icon: "bars"
+toc_sticky: true
 ---
 
 I'm currently a student at [Imperial College London](https://www.imperial.ac.uk/) studying [Computing](https://www.imperial.ac.uk/computing/), having just finished my first year of studies.
