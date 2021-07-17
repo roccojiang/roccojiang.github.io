@@ -1,7 +1,8 @@
 ---
 layout: post
-title:  "Algorithms in Daily Life"
-tags:   programming algorithms
+title: "Algorithms in Daily Life"
+tags: programming algorithms
+excerpt_separator: <!--more-->
 ---
 
 This post was originally published as an article for the [fourth issue](https://issuu.com/harrowhongkong/docs/scientific_harrovian_2019_single_page) of Harrow International School Hong Kong's Scientific Harrovian, in 2019. The article was intended to be a relatively non-technical introduction to basic algorithms and algorithm analysis for Sixth Form students. I've since made a few tiny edits and tidied it up somewhat.
@@ -15,6 +16,8 @@ However, in its simplest terms, an algorithm is just a collection of simple inst
 In fact, you use algorithms yourself every day, whether you know it or not. If you think about our earlier definition of an algorithm, you could also call it a ‘procedure’ or even a ‘recipe’. Even the completely ordinary task of cooking something from a recipe is you following an algorithm. You take your ingredients (input), follow the instructions, and produce a delicious meal (output)! A cooking recipe is nowhere near as complicated as the complex algorithms that power Google or Facebook, but it is an algorithm nonetheless.
 
 This article aims to acquaint you with algorithmic thinking by introducing a range of simple algorithms in the context of everyday problems. The algorithms that will be introduced are simple – some may even be so intuitive that you already use them without thinking about it – but they still hold great importance in the computer systems that allow us to do things you’d never think twice about, such as accessing the Internet. Furthermore, different algorithms used to approach the same task will be compared, to see how efficient they are relative to each other. After all, speed is a very important factor to consider when implementing an algorithm – you wouldn’t want to use an algorithm that takes an hour to complete if there exists an alternative that only takes a minute!
+
+<!--more-->
 
 ## Time complexity
 Time complexity describes the amount of time it takes to run an algorithm. However, we don’t measure this in seconds or minutes, because that’s not what were interested in. An algorithm’s running time will be different depending on the size of its input. For example, it would obviously take less time to find an item out of 100 other items than, say, a million other items! What we are interested in is how different algorithm running times grow at different rates. Instead of using seconds, time complexity is measured using Big O notation, which shows how quickly the runtime of an algorithm increases as the size of the input increases.
@@ -96,7 +99,7 @@ This method makes use of *backtracking*, so whenever you hit a dead end you can 
 
 ![Example of a maze solved using Trémaux’s algorithm](/assets/images/tremaux.png){:standalone width="60%"}
 
-These three maze-solving algorithms covered are useful for a person inside of a maze. There are other methods that may be faster and guarantee a shortest path out, however they require us to have a full bird’s eye view of the maze. These include dead-end filling and shortest path algorithms such as breadth-first search, Dijkstra’s algorithm, and the A* search algorithm. Those who have done the D1 module in A Level Further Mathematics may intuitively recognise that the [paths in any maze (with no loops) can be pulled and stretched out to resemble a tree (from graph theory)](https://youtu.be/k1tSK5V1pds).
+These three maze-solving algorithms covered are useful for a person inside of a maze. There are other methods that may be faster and guarantee a shortest path out, however they require us to have a full bird’s eye view of the maze. These include dead-end filling and shortest path algorithms such as breadth-first search, Dijkstra’s algorithm, and the A* search algorithm[^4]. Those who have done the D1 module in A Level Further Mathematics may intuitively recognise that the [paths in any maze (with no loops) can be pulled and stretched out to resemble a tree (from graph theory)](https://youtu.be/k1tSK5V1pds).
 
 Maze-solving seems to have little application to daily life, however it turns out that the idea of getting from one point to another in a constrained environment (like a maze) is very important in many applications that we use every day. In graph theory, an alternative way of describing a maze would be to have the passages as edges and intersections as nodes. A website that knows how roads are connected – such as Google Maps – can tell you the best way to get from your home to school, and an app that knows your friends – Facebook or Snapchat, for example – can better guess who else you may know, based on the connections between your mutual friends. Even robot vacuums are a good example, as different brands and models use different algorithms. Cheaper robots may use something similar to the random mouse algorithm, simply roaming around, while more expensive models may first map out your room to determine where obstacles are and then move back and forth in a grid-like pattern. The maze-solving algorithms that are used in everyday life may not be as simple as the ones described here, but it is important to understand how something so seemingly trivial can be so important in real-world applications.
 
@@ -110,3 +113,4 @@ Algorithms are beautiful because of how they allow you to solve generalised prob
 [^1]: Image by [GeeksforGeeks](https://www.geeksforgeeks.org/insertion-sort/).
 [^2]: Image via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Merge_sort_algorithm_diagram.svg).
 [^3]: These illustrations are from the book 'Bad Choices: How Algorithms Can Help You Think Smarter and Live Happier', by Ali Almossawi. An online adaptation of the first seven chapters can be found [here](https://bookofbadchoices.com/) – it's an excellent short read for a further introduction to computational thinking.
+[^4]: [Wikipedia](https://en.wikipedia.org/wiki/Maze-solving_algorithm) has a relatively useful page about these algorithms.
