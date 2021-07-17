@@ -21,8 +21,8 @@
 title: Rocco Jiang
 email: roccohjiang@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Computing student at Imperial College London.
-url: "https://roccojiang.github.io/"
+  Computing student @ Imperial College London.
+url: https://roccojiang.github.io/
 twitter_username:
 github_username: roccojiang
 
@@ -39,9 +39,9 @@ sidebar_home_link: true
 
 # Plugins
 plugins:
+  - jekyll-feed
   - jekyll-gist
   - jekyll-paginate
-  - jekyll-feed
 
 # Exclude from processing.
 # The following items will not be processed, by default.
