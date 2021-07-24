@@ -5,7 +5,7 @@ tags: programming algorithms
 excerpt_separator: <!--more-->
 ---
 
-This post was originally published as an article for the [fourth issue](https://issuu.com/harrowhongkong/docs/scientific_harrovian_2019_single_page) of Harrow International School Hong Kong's Scientific Harrovian, in 2019. The article was intended to be a relatively non-technical introduction to basic algorithms and algorithm analysis for Sixth Form students. I've since made a few tiny edits and tidied it up somewhat.
+*This post was originally published as an article for the [fourth issue](https://issuu.com/harrowhongkong/docs/scientific_harrovian_2019_single_page) of Harrow International School Hong Kong's Scientific Harrovian, in 2019. The article was intended to be a relatively non-technical introduction to basic algorithms and algorithm analysis for Sixth Form students. I've since made a few tiny edits and tidied it up somewhat.*
 
 ---
 
@@ -20,11 +20,11 @@ This article aims to acquaint you with algorithmic thinking by introducing a ran
 <!--more-->
 
 ## Time complexity
-Time complexity describes the amount of time it takes to run an algorithm. However, we don’t measure this in seconds or minutes, because that’s not what were interested in. An algorithm’s running time will be different depending on the size of its input. For example, it would obviously take less time to find an item out of 100 other items than, say, a million other items! What we are interested in is how different algorithm running times grow at different rates. Instead of using seconds, time complexity is measured using Big O notation, which shows how quickly the runtime of an algorithm increases as the size of the input increases.
+Time complexity describes the amount of time it takes to run an algorithm. However, we don’t measure this in seconds or minutes, because that’s not what we're interested in. An algorithm’s running time will be different depending on the size of its input. For example, it would obviously take less time to find an item out of 100 other items than, say, a million other items! What we are interested in is how different algorithm running times grow at different rates. Instead of using seconds, time complexity is measured using Big O notation, which shows how quickly the runtime of an algorithm increases as the size of the input increases.
 
 ![Common Big O runtimes](/assets/images/big-o-runtimes.png){:standalone width="70%"}
 
-Big O notation is written with a ‘big O’ and some function of n within a pair of brackets, for example $$ O(n^2) $$.
+Big O notation is written with a ‘big O’ and some function of $$ n $$ within a pair of brackets, for example $$ O(n^2) $$.
 
 ## Searching
 Imagine that you are playing a simple game. An integer from 1 to 16 is randomly chosen and you need to guess which number it is. After every guess, you are told if your guess was too high or too low. How would you approach this?
