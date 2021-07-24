@@ -33,6 +33,7 @@ remote_theme: fongandrew/hydeout
 
 # Outputting
 paginate: 5
+permalink: /:categories/:slug/
 
 # Sidebar link settings
 sidebar_home_link: true
