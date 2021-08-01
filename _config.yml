@@ -35,6 +35,7 @@ remote_theme: fongandrew/hydeout
 # Outputting
 paginate: 5
 permalink: /:categories/:slug/
+excerpt_separator: <!-- excerpt-end -->
 
 # Sidebar link settings
 sidebar_home_link: true

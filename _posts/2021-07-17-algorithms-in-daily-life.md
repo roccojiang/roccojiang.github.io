@@ -2,12 +2,14 @@
 layout: post
 title: "Algorithms in Daily Life"
 tags: programming algorithms
-excerpt_separator: <!--more-->
+medium_link: algorithms-in-daily-life-5bfbf04ee368
 ---
 
 *This post was originally published as an article for the [fourth issue](https://issuu.com/harrowhongkong/docs/scientific_harrovian_2019_single_page) of Harrow International School Hong Kong's Scientific Harrovian, in 2019. The article was intended to be a relatively non-technical introduction to basic algorithms and algorithm analysis for Sixth Form students. I've since made a few tiny edits and tidied it up somewhat.*
 
 ---
+
+<!-- excerpt-start -->
 
 What comes to mind when you hear the word ‘algorithm’? Some sort of perplexing concept that has something to do with technology or coding? In a sense, you'd be correct. Algorithms are what make computers work; without them, computers would be useless, unable to complete any tasks. They are the instructions that allow computer systems to solve a variety of complicated problems, faster than any human could. And they are everywhere in modern life, from Netflix suggestions to financial markets.
 
@@ -17,7 +19,7 @@ In fact, you use algorithms yourself every day, whether you know it or not. If y
 
 This article aims to acquaint you with algorithmic thinking by introducing a range of simple algorithms in the context of everyday problems. The algorithms that will be introduced are simple – some may even be so intuitive that you already use them without thinking about it – but they still hold great importance in the computer systems that allow us to do things you’d never think twice about, such as accessing the Internet. Furthermore, different algorithms used to approach the same task will be compared, to see how efficient they are relative to each other. After all, speed is a very important factor to consider when implementing an algorithm – you wouldn’t want to use an algorithm that takes an hour to complete if there exists an alternative that only takes a minute!
 
-<!--more-->
+<!-- excerpt-end -->
 
 ## Time complexity
 Time complexity describes the amount of time it takes to run an algorithm. However, we don’t measure this in seconds or minutes, because that’s not what we're interested in. An algorithm’s running time will be different depending on the size of its input. For example, it would obviously take less time to find an item out of 100 other items than, say, a million other items! What we are interested in is how different algorithm running times grow at different rates. Instead of using seconds, time complexity is measured using Big O notation, which shows how quickly the runtime of an algorithm increases as the size of the input increases.
