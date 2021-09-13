@@ -2,7 +2,6 @@
 # Edit at https://www.toptal.com/developers/gitignore?templates=jekyll,ruby,macos
 
 ### Jekyll ###
-_drafts/
 _site/
 .sass-cache/
 .jekyll-cache/
