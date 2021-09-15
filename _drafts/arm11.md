@@ -28,8 +28,7 @@ We also implemented a visualisation of [Dijkstra's pathfinding algorithm](https:
 
 ![Visualisation of Dijkstra's algorithm for maze-solving.](https://github.com/ethanrange/c-maze-generation/raw/master/images/dijkstras.gif){:standalone}
 
-## Design
-### Project structure
+## Project structure
 The purposes of each source file are as follows:
 - `main.c` – Entry point containing the `main` function, which sets up the GUI and runs the visualiser loop.
 - `visualiser.[c|h]` – Contains all the functions for handling user input, initiation of algorithms, and drawing
@@ -42,7 +41,7 @@ Due to the inherent parallels between the algorithms, we were able to take many 
 
 ![Dependency graph for the project.](/assets/images/maze-generation-dependencies.svg){:standalone width="90%"}
 
-### Algorithm implementations
+### Use of function pointers
 If you were to look at the source files for each algorithm, you'd notice that they mostly follow a very similar structure containing `init`, `step`, and `run` functions. Take `prims.h` for example (I've omitted some of the documentation for brevity):
 
 ```c
@@ -58,7 +57,7 @@ bool run_prims(Tile tiles[ROWS][COLS]);
 
 The only algorithm that deviates from this format is the recursive backtrack, which doesn't have `init` and `step` functions since the implementation uses a recursive approach, rather than the iterative approach which allowed step-by-step visualisation for the other algorithms.
 
-This kind of regularity meant that we could take advantage of [function pointers](https://www.cprogramming.com/tutorial/function-pointers.html) to write some rather elegant code. If we take a look at `visualiser.h` and `visualiser.c`, we declare three arrays containing function pointers to each algorithm's `init`, `step`, and `run` functions:
+This kind of regularity meant that we could take advantage of [function pointers](https://www.cprogramming.com/tutorial/function-pointers.html) – one of the features of C that I find really cool and elegant. If we take a look at `visualiser.h` and `visualiser.c`, we declare three arrays containing function pointers to each algorithm's `init`, `step`, and `run` functions:
 
 ```c
 typedef void (*InitFuncPtr)(Tile[ROWS][COLS], Player);
@@ -133,9 +132,15 @@ static bool handle_algorithm(RunState type) {
 
 But, it's still much nicer than if we had to handle every algorithm separately with long and painfully verbose switch statements.
 
+## Noteworthy challenges
+By the time we started work on the extension, our group was well acquainted with C as we had already completed most of the main project by then. Thus, work on the visualiser went rather smoothly, but there are still some challenges we ran into which I felt was worth mentioning (as well as some small annoyances which I just wanted to complain about).
 
-- Flattening nested includes
-- Raylib -> pain w/ makefiles
+### Flattening nested includes
+
+### Pain with Makefiles
+
+### We kept messing up with git
+
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/VV_Rhtc2ekA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 {: #video}
