@@ -6,9 +6,14 @@ tags: programming c imperial
 
 The summer term of [Imperial's first year Computing curriculum](https://www.imperial.ac.uk/computing/current-students/computing/computing-first-year/) ended with a project written in C, completed in groups of four over the span of about three weeks. We were required to implement emulator and assembler programs for a subset of the [ARM instruction set architecture](https://developer.arm.com/documentation/), as well as an open-ended extension which was also required to be written in C.
 
-Our extension was a visualiser for a number of procedural maze generation algorithms, each producing a distinct style of maze with differing solution path characteristics. The program visually conveys the differences between each method, which could aid the understanding of students who are learning the fundamental algorithms behind these generation functions.
+Our extension was a visualiser for a number of procedural maze generation algorithms, each producing a distinct style of maze with differing solution path characteristics. The program visually conveys the differences between each method, which could aid the understanding of students who are learning the fundamental algorithms behind these generation functions. In this post, I discuss some of the technical details in developing our extension.
 
-For our work on the project, our group was presented with the 2020-21 ARM11 "Best Overall Project" award (with the prize money, Imperial now funds my addiction to building mechanical keyboards). Our [presentation video](#video) was also shown at the College's [Undergraduate Virtual Open Week](https://www.imperial.ac.uk/events/136819/undergraduate-virtual-open-week-imperial360-live-department-of-computing/).
+For our work on the project, our group was presented with the 2020-21 ARM11 "Best Overall Project" award (with the prize money, Imperial now funds my addiction to building mechanical keyboards). We also had a lot of fun filming our presentation video, which was selected to be shown at the College's [Undergraduate Virtual Open Week](https://www.imperial.ac.uk/events/136819/undergraduate-virtual-open-week-imperial360-live-department-of-computing/).
+
+<div style="text-align:center">
+  <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/VV_Rhtc2ekA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen> </iframe>
+</div>
+&nbsp;
 
 <!-- excerpt-end -->
 
@@ -125,22 +130,23 @@ static bool handle_algorithm(RunState type) {
     return run_algorithm(type);
   }
 
-  // Return unsucessful
+  // Return unsuccessful
   return false;
 }
 ```
 
-But, it's still much nicer than if we had to handle every algorithm separately with long and painfully verbose switch statements.
+In hindsight, we could've taken this into account had we realised sooner. Either way, it's still much nicer than if we had to handle every algorithm separately with long and painfully verbose switch statements.
 
-## Noteworthy challenges
+## Takeaways
+This was the first software engineering group project we undertook in our course, and we were given a lot of freedom to implement our code however we wanted. Instead of being given skeleton code files, we were expected to start from a blank slate. We had to carefully consider how to design our codebase, and also experienced using git in a small group setting for the first time. Hours were spent wrangling with uncooperative Makefiles, and many mistakes were made with git merges.
+
+Despite the many challenges we faced, this was a very fun project for everyone involved. We could finally apply what we had learnt throughout the year in a setting where we were unrestricted in our coding approach. It was exhilarating to end the academic year on a project where we could unleash our creativity, and I hope this sentiment is shared by all first year students here in Computing.
+
+<!-- ## Noteworthy challenges
 By the time we started work on the extension, our group was well acquainted with C as we had already completed most of the main project by then. Thus, work on the visualiser went rather smoothly, but there are still some challenges we ran into which I felt was worth mentioning (as well as some small annoyances which I just wanted to complain about).
 
 ### Flattening nested includes
 
 ### Pain with Makefiles
 
-### We kept messing up with git
-
-
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/VV_Rhtc2ekA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-{: #video}
+### We kept messing up with git -->

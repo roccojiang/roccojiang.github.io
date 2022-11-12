@@ -9,3 +9,5 @@ group :jekyll_plugins do
   gem "jekyll-paginate", "~> 1.1"
   gem "jekyll-feed", "~> 0.6"
 end
+
+gem "webrick", "~> 1.7"

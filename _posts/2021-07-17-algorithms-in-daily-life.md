@@ -9,8 +9,6 @@ medium_link: algorithms-in-daily-life-5bfbf04ee368
 
 ---
 
-<!-- excerpt-start -->
-
 What comes to mind when you hear the word ‘algorithm’? Some sort of perplexing concept that has something to do with technology or coding? In a sense, you'd be correct. Algorithms are what make computers work; without them, computers would be useless, unable to complete any tasks. They are the instructions that allow computer systems to solve a variety of complicated problems, faster than any human could. And they are everywhere in modern life, from Netflix suggestions to financial markets.
 
 However, in its simplest terms, an algorithm is just a collection of simple instructions for carrying out some task in finite time. An algorithm takes an input, does something to it, and provides an output. We take advantage of the computer’s ability to perform billions of operations per second to run algorithms at lightning speed, but algorithms don’t need to have anything to do with computer code. In fact, the concept of algorithms has existed for millennia; some of the first algorithms were used by the Ancient Babylonians around 1600 BCE, for purposes such as [finding square roots](https://doi.org/10.1006/hmat.1998.2209) and [calculating compound interest](https://doi.org/10.1145/361454.361514).
