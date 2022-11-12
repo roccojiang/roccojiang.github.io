@@ -3,9 +3,11 @@ layout: page
 title: About me
 ---
 
-I'm a third-year student at [Imperial College London](https://www.imperial.ac.uk/) studying [Computing](https://www.imperial.ac.uk/computing/). I have an interest in functional programming and programming language theory in general. Currently, I am highly enjoying learning about type theory in the excellent [Type Systems for Programming Languages](https://www.doc.ic.ac.uk/~svb/TSfPL/) course.
+I'm a third-year student at [Imperial College London](https://www.imperial.ac.uk/) studying [Computing](https://www.imperial.ac.uk/computing/) with an integrated Masters. I have an interest in functional programming and programming language theory in general.
 
-You can find my blog posts on computing-related topics [here](/posts), as well as other miscellaneous rambles and thoughts.
+Currently, I'm really enjoying learning about type theory in the excellent [Type Systems for Programming Languages](https://www.doc.ic.ac.uk/~svb/TSfPL/) course.
+
+You can find my blog posts on computing-related topics [here](/posts).
 
 ## Projects
 Below is a brief selection of my more interesting projects:
