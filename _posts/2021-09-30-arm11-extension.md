@@ -4,7 +4,7 @@ title: "Visualisations of Procedural Maze Generation Algorithms in C"
 tags: programming c imperial
 ---
 
-The summer term of [Imperial's first year Computing curriculum](https://www.imperial.ac.uk/computing/current-students/computing/computing-first-year/) ended with a project written in C, completed in groups of four over the span of about three weeks. We were required to implement emulator and assembler programs for a subset of the [ARM instruction set architecture](https://developer.arm.com/documentation/), as well as an open-ended extension which was also required to be written in C.
+The summer term of [Imperial's first year Computing curriculum](https://www.imperial.ac.uk/computing/current-students/computing/computing-first-year/) ended with a project written in C, completed in groups of four over the span of about three weeks. We were required to implement emulator and assembler programs for a subset of the [ARM instruction set architecture](https://developer.arm.com/documentation/), as well as an open-ended extension (during the last week) which was also required to be written in C.
 
 Our extension was a visualiser for a number of procedural maze generation algorithms, each producing a distinct style of maze with differing solution path characteristics. The program visually conveys the differences between each method, which could aid the understanding of students who are learning the fundamental algorithms behind these generation functions. In this post, I discuss some of the technical details in developing our extension.
 
