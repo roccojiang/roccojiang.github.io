@@ -1,5 +1,4 @@
 ---
-layout: page
 title: About me
 ---
 
@@ -7,7 +6,9 @@ I'm a third-year student at [Imperial College London](https://www.imperial.ac.uk
 
 Currently, I'm really enjoying learning about type theory in the excellent [Type Systems for Programming Languages](https://www.doc.ic.ac.uk/~svb/TSfPL/) course.
 
-You can find my blog posts on computing-related topics [here](/posts).
+<!-- You can find my blog posts on computing-related topics [here](/posts). -->
+## Posts
+$partial("templates/post-list.html")$
 
 ## Projects
 Below is a brief selection of my more interesting projects:
