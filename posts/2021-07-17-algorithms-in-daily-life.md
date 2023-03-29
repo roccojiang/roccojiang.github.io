@@ -22,7 +22,7 @@ This article aims to acquaint you with algorithmic thinking by introducing a ran
 ## Time complexity
 Time complexity describes the amount of time it takes to run an algorithm. However, we don’t measure this in seconds or minutes, because that’s not what we're interested in. An algorithm’s running time will be different depending on the size of its input. For example, it would obviously take less time to find an item out of 100 other items than, say, a million other items! What we are interested in is how different algorithm running times grow at different rates. Instead of using seconds, time complexity is measured using Big O notation, which shows how quickly the runtime of an algorithm increases as the size of the input increases.
 
-![Common Big O runtimes](/images/big-o-runtimes.png){:standalone width="70%"}
+![Common Big O runtimes](/images/big-o-runtimes.png)
 
 Big O notation is written with a ‘big O’ and some function of $$ n $$ within a pair of brackets, for example $$ O(n^2) $$.
 
@@ -31,11 +31,11 @@ Imagine that you are playing a simple game. An integer from 1 to 16 is randomly 
 
 A very simple approach would be to guess 1, then 2, then 3, and so on. This method, known as *linear search*, is very easy to use, as you simply guess all the numbers in sequence. However, it should be obvious that it is not the best approach, since the worst-case scenario would be that you take 16 guesses, if the number was 16.
 
-![Worst-case scenario of using linear search in the guessing game](/images/linear-search.png){:standalone width="85%"}
+![Worst-case scenario of using linear search in the guessing game](/images/linear-search.png)
 
 An alternative approach that you most likely would’ve taken is to start off by guessing at the midpoint, 8. If 8 is too high, you can eliminate all numbers from 8 to 16; if 8 is too low, you can eliminate all numbers from 1 to 8. With one guess, you will be able to eliminate half of the numbers. Each guess further eliminates half of the remaining numbers, until you achieve the correct number. Because of this, to find the worst-case scenario, we just need to find how many times you have to divide 16 by 2 in order to get to 1 – if there’s one number left it has to be the correct one. Therefore, the worst-case scenario would only require $$ \log_{2⁡} 16 = 4 $$ guesses.  This method, called *binary search*, is a much more efficient method to solve this problem as every guess halves the range of further guesses.
 
-![Worst-case scenario of using binary search in the guessing game](/images/linear-search.png){:standalone width="85%"}
+![Worst-case scenario of using binary search in the guessing game](/images/linear-search.png)
 
 Now imagine applying binary search to a much larger list of items. Imagine trying to find one user out of the 2.3 billion users on Facebook (as of December 2018). Using linear search, your worst-case scenario would be having to check every single 2.3 billion users! However, if you used binary search, the first user you check would already eliminate the need to check over 1 billion other users. Therefore, you’d only need a maximum of $$ \lceil \log_{2} (2.3 \times 10^9) \rceil = 32 $$ guesses. This shows how binary search becomes much more efficient as the number of items in the list increases.
 
@@ -43,7 +43,7 @@ When expressed in Big O notation, the time complexity of linear search is $$ O(n
 
 We have already established that at most, binary search requires searching through $$ \log_{2} ⁡n $$  items for a list of $$ n $$ items. Therefore binary search has a time complexity of $$ O(\log n) $$, known as *logarithmic time*. An $$ O(\log n) $$ algorithm is very efficient, since the properties of logarithms means that as the number of inputs increases, the rate at which the running time increases slows down very quickly.
 
-![Big O runtimes of linear and binary search](/images/big-o-linear-vs-binary.png){:standalone width="70%"}
+![Big O runtimes of linear and binary search](/images/big-o-linear-vs-binary.png)
 
 ## Sorting
 You may have noticed that there is one requirement of binary search – the list must be sorted! You cannot run binary search on an unsorted list, as it relies on knowing if your value is higher or lower than the target value. You would have to use linear search if you had an unsorted list – this means that at you are limited to $$ O(n) $$ time. Therefore, if you often need to search through a list, it may be useful to use a sorting algorithm to sort it, so that you can use the much more efficient binary search on it.
@@ -56,7 +56,7 @@ Imagine having to sort a hand of playing cards. Most people would probably use t
 
 This method is called *insertion sort*. The following figure shows a visualisation of insertion sort being applied on an unsorted list[^1]:
 
-![Example execution of insertion sort](/images/insertion-sort.png){:standalone width="45%"}
+![Example execution of insertion sort](/images/insertion-sort.png)
 
 An alternative sorting algorithm is called *merge sort*. It is what is called a *divide and conquer algorithm*, as it breaks down the problem into multiple subproblems to solve. The idea of merge sort is as follows:
 1. Split the list in half, resulting in 2 sublists
@@ -67,22 +67,22 @@ An alternative sorting algorithm is called *merge sort*. It is what is called a 
 
 The following figure shows a visualisation of merge sort being applied on an unsorted list[^2]:
 
-![Example execution of merge sort](/images/merge-sort.svg){:standalone width="65%"}
+![Example execution of merge sort](/images/merge-sort.svg)
 
 Merge sort may seem unnecessarily complicated, and it is true that it would probably be impractical for humans to use. It would be much more intuitive for us to use insertion sort instead. However, this is different for a computer. Insertion sort has a time complexity of $$ O(n^2) $$, also known as *quadratic time*, while merge sort is $$ O(n \log n) $$. This means that merge sort is more efficient than insertion sort, especially in large lists. While easy to program, insertion sort is usually only used in real-life applications when the expected size of lists is small. Merge sort handles larger lists much more easily but it is much more advanced and complex to implement.
 
-![Big O runtimes of insertion and merge sort](/images/big-o-insertion-vs-merge.png){:standalone width="70%"}
+![Big O runtimes of insertion and merge sort](/images/big-o-insertion-vs-merge.png)
 
 ## Maze solving
 Imagine that you are trapped inside a maze. How would you find your way out? The most trivial (and inefficient) method would be to simply follow along the passages, making random turns until you find your way out. Although you would eventually escape, you might imagine that this approach can be extremely slow. Surprisingly, this unintelligent algorithm does actually have a name – the *random mouse algorithm*.
 
-However, surely there is a better method. One that is commonly known is the *wall follower algorithm*, also known as the left-hand or right-hand rule. You simply follow the wall with one hand, and you would eventually find your way out of the maze. This approach works because if you rearrange a maze’s walls, you usually can end up with a straight line[^3]. And so, if you think of the maze as a piece of string, it is obvious that walking from one end will eventually get you to the other.
+However, surely there is a better method. One that is commonly known is the *wall follower algorithm*, also known as the left-hand or right-hand rule. You simply follow the wall with one hand, and you would eventually find your way out of the maze. This approach works because if you rearrange a maze’s walls, you usually can end up with a straight line. And so, if you think of the maze as a piece of string, it is obvious that walking from one end will eventually get you to the other.
 
-![A simple maze rearranged into a straight line](/images/maze-rearrangement.png){:standalone width="60%"}
+![A simple maze rearranged into a straight line](/images/maze-rearrangement.png)
 
-However, a flaw of the wall follower algorithm is that it doesn’t work on all mazes. If the maze has ‘loops’ inside of it – walls that are not connected to the outer wall, this algorithm fails. The following figure shows how you would be stuck running around in circles if you started following a wall in a simple loop[^3]:
+However, a flaw of the wall follower algorithm is that it doesn’t work on all mazes. If the maze has ‘loops’ inside of it – walls that are not connected to the outer wall, this algorithm fails. The following figure[^3] shows how you would be stuck running around in circles if you started following a wall in a simple loop:
 
-![Examples of the wall follower algorithm](/images/wall-follower.png){:standalone width="50%"}
+![Examples of the wall follower algorithm](/images/wall-follower.png)
 
 If a loop was much larger and more complicated, it would be hard to realise that you are following one and you would never leave the maze. Luckily, there is another algorithm that doesn’t have this weakness – *Trémaux’s algorithm*. A simple version of the algorithm was actually described in the Greek myth of Theseus and the Minotaur. In the tale, the architect Daedalus built a labyrinth to contain the Minotaur, a ferocious monster. Theseus, who was to be fed to the Minotaur, was given a plan by Ariadne, the daughter of the King, to escape the labyrinth.
 
@@ -97,7 +97,7 @@ In more algorithmic terms, Trémaux’s algorithm can be described as follows:
 
 This method makes use of *backtracking*, so whenever you hit a dead end you can try a different path. The ability to go back to intersections and try better routes guarantees that you will find your way out, no matter if the maze has loops or not. In the following figure, the green arrows show a decision to take a new path when you meet a marked path (step 2 of our algorithm):
 
-![Example of a maze solved using Trémaux’s algorithm](/images/tremaux.png){:standalone width="60%"}
+![Example of a maze solved using Trémaux’s algorithm](/images/tremaux.png)
 
 These three maze-solving algorithms covered are useful for a person inside of a maze. There are other methods that may be faster and guarantee a shortest path out, however they require us to have a full bird’s eye view of the maze. These include dead-end filling and shortest path algorithms such as breadth-first search, Dijkstra’s algorithm, and the A* search algorithm[^4]. Those who have done the D1 module in A Level Further Mathematics may intuitively recognise that the [paths in any maze (with no loops) can be pulled and stretched out to resemble a tree (from graph theory)](https://youtu.be/k1tSK5V1pds).
 

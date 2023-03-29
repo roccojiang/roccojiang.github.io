@@ -273,13 +273,21 @@ footer {
   font-size: 0.8em;
   margin-top: 30px;
   padding: 12px 0px 12px 0px;
-  text-align: right;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .left {
+  float: left;
+}
+
+footer .right {
+  float: right;
 }
 
 footer .social {
-  float: left;
   font-size: 1.5em;
-  /* TODO: fix vertical spacing */
 }
 
 /*
@@ -486,6 +494,8 @@ p img, p iframe, p video {
 
 figure > figcaption {
   display: block;
+  color: var(--main-fg-dim);
+  text-align: center;
   margin: 0 auto;
   margin-top: 1rem; /* smaller margin between image and caption */
 }

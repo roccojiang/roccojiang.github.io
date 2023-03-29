@@ -31,7 +31,7 @@ The Wikipedia page on [maze generation algorithms](https://en.wikipedia.org/wiki
 
 We also implemented a visualisation of [Dijkstra's pathfinding algorithm](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm), to show how these mazes may be solved. Again, this wasn't difficult to implement, but it was still immensely satisfying to watch the algorithm explore the passageways of our generated mazes, twisting through bends and corners in search of a path to the goal coordinate.
 
-![Visualisation of Dijkstra's algorithm for maze-solving.](https://github.com/ethanrange/c-maze-generation/raw/master/images/dijkstras.gif){:standalone}
+![Visualisation of Dijkstra's algorithm for maze-solving.](https://github.com/ethanrange/c-maze-generation/raw/master/images/dijkstras.gif)
 
 ## Project structure
 The purposes of each source file are as follows:
@@ -44,7 +44,7 @@ the visualiser.
 
 Due to the inherent parallels between the algorithms, we were able to take many common features between them (e.g sets, bounds checking, and neighbour identification) and convert them to generic functions, minimising redundant code.
 
-![Dependency graph for the project.](/images/maze-generation-dependencies.svg){:standalone width="90%"}
+![Dependency graph for the project.](/images/maze-generation-dependencies.svg)
 
 ### Use of function pointers
 If you were to look at the source files for each algorithm, you'd notice that they mostly follow a very similar structure containing `init`, `step`, and `run` functions. Take `prims.h` for example (I've omitted some of the documentation for brevity):
