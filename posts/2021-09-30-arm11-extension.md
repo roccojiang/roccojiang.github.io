@@ -19,7 +19,7 @@ For our work on the project, our group was presented with the 2020-21 ARM11 "Bes
 
 Imperial retains the copyright to the project specification, so I'm not permitted to publicly share or explain our group's code for the main project. However, as the extension is fully original work, I'm allowed to share our code on a [public git repo](https://github.com/ethanrange/c-maze-generation).
 
-![Visualisation of Prim's algorithm for maze generation. Countless hours were wasted staring at this mesmerising display.](https://github.com/ethanrange/c-maze-generation/raw/master/images/prims.gif){:standalone}
+![Visualisation of Prim's algorithm for maze generation. Countless hours were wasted staring at this mesmerising display.](https://github.com/ethanrange/c-maze-generation/raw/master/images/prims.gif)
 
 ## Algorithm implementations
 The algorithms are all derivatives of classical graph algorithms that Computing students cover earlier in the [Graphs and Algorithms module](https://www.imperial.ac.uk/computing/current-students/courses/40008/). The three maze generation algorithms we implemented were:
