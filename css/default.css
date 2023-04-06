@@ -221,18 +221,32 @@ figure img, figure video, p img, p video {
 * Header, footer and navigation
 */
 
-header {
-  text-align: right;
-}
-
-.logo {
-  float: left;
-  font-size: 1.1em;
-  text-decoration: none;
-}
-
 nav {
-  text-align: right;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+}
+
+#navbar-logo {
+  font-size: 1.4em;
+  font-weight: bold;
+  text-decoration: none;
+  margin-right: auto;
+}
+
+#navbar-toggle {
+  font-size: 1.2em;
+  background: none;
+  border: none;
+  color: var(--main-fg-dim);
+  outline: none;
+  padding-left: 2rem;
+}
+
+#navbar-toggle:hover {
+  color: var(--main-fg);
+  cursor: pointer;
 }
 
 nav a {
@@ -253,20 +267,6 @@ nav ul li {
   margin-left: 0.5rem;
 }
 
-nav button.scheme {
-  background: none;
-  border: none;
-  color: var(--main-fg-dim);
-  margin-left: 0;
-  outline: none;
-  padding: none;
-}
-
-nav button.scheme:hover {
-  color: var(--main-fg);
-  cursor: pointer;
-}
-
 footer {
   border-top: 1px solid var(--main-bg-dim);
   color: var(--main-fg-dim);
@@ -278,16 +278,12 @@ footer {
   align-items: center;
 }
 
-footer .left {
-  float: left;
-}
-
-footer .right {
-  float: right;
-}
-
 footer .social {
   font-size: 1.5em;
+}
+
+#footer-text {
+  margin: 0;
 }
 
 /*
